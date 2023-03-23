@@ -1,0 +1,261 @@
+body {
+  background-image: url(./shara\ desert.jpg);
+}
+/* .container{display: flex;
+} */
+.container1 {
+  /* position: relative; */
+  display: flex;
+  margin-top: 0px;
+  margin-left: 30px;
+  /* height: 20%; */
+  justify-content: space-between;
+}
+.cammel {
+  /* position: absolute; */
+  margin-top: 40px;
+  margin-left: 95px;
+  /* left: 100px; */
+}
+.cammel img {
+  height: 60px;
+  width: 70px;
+}
+.list {
+  /* position: absolute; */
+  height: 30px;
+  /* right: 500px; */
+  margin-left: 500px;
+}
+.list ul {
+  /* position: absolute; */
+  display: flex;
+  list-style: none;
+}
+
+.menubar {
+  /* position: absolute; */
+  height: 30px;
+  /* right: 20px; */
+  margin-right: 80px;
+  /* margin-left: 600px; */
+}
+li a {
+  text-decoration: none;
+  padding: 30px 30px;
+  color: white;
+}
+
+.container2{
+  display: flex;
+  justify-content: space-around;
+}
+
+.part1{
+    margin-top: 200px;
+    margin-left: 10px;
+    color: white;
+    /* line-gap-override: 10px; */
+    line-height: 10px;
+}
+.sahara{
+    font-size:40px;
+    margin-top: 10px;
+
+}
+.button button{padding: 15px 30px;
+  width: 250px;
+  border-color: white;
+     border-radius: 30px;
+    background-color: white;
+}
+.part2{
+      display: grid;
+      column-gap: 35px;
+      row-gap: 25px;
+      
+}
+.grid1{
+  grid-row: 1/2;
+  grid-column: 1/2;
+  border: 0px solid black;
+  border-radius: 20px;
+  height: 220px;
+  width: 200px;
+  background-image: url(./pic-1.png);
+  background-size: cover;
+  /* background-position:right; */
+  padding-left: 15px;
+  color: white;
+  font-size:small;
+}
+.grid2{
+  grid-row: 1/2;
+  grid-column: 2/3;
+
+  border: 0px solid black;
+  border-radius: 20px;
+  height: 220px;
+  width:200px;
+  background-image: url(./pic-2.png);
+  background-size: cover;
+  /* background-position: inherit; */
+  padding-left: 15px;
+  color: white;
+  font-size:small;
+  
+}
+.grid3{
+  grid-row: 2/3;
+  grid-column: 1/2;
+
+  border: 0px solid black;
+  border-radius: 20px;
+  height: 220px;
+  width: 200px;
+  background-image: url(./pic-3.png);
+  background-size: cover;
+  /* background-position: unset; */
+  padding-left: 15px;
+  color: white;
+  font-size:small;
+
+}
+.grid4{
+  grid-row: 2/3;
+  grid-column: 2/3;
+  height: 280px;
+  border: 0px solid black;
+  border-radius: 20px;
+  height: 220px;
+  width: 200px;
+  background-image: url(./pic-4.png);
+  background-size: cover;
+  /* background-position: right; */
+  padding-left: 15px;
+  color: white;
+  font-size:small;
+}
+
+.scale:hover{
+  transform: translateY(-7px);
+}
+
+@media screen and (min-width:320px) and (max-width:500px) 
+{
+
+  .container2{
+    /* display: block; */
+    justify-content: center;
+    flex-direction: column;
+   
+    
+  }
+  .cammel{
+    margin-left: 200px;
+  }
+  .loremhide{
+    display: none;
+  }
+  .list ul {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  .part1{
+    margin-top: -45px;
+    margin-left: 305px;
+  }
+  .part2{
+    margin-left:370px;
+  }
+ 
+.grid1{
+  grid-row: 1/2;
+  justify-content: center;
+ 
+}
+.grid2{
+  grid-row: 2/3;
+  grid-column: 1/2;
+  justify-content: center;
+}
+.grid3{
+  grid-row: 3/4;
+  justify-content: center;
+  
+}
+.grid4{
+  grid-row:4/5 ;
+  grid-column: 1/2;
+  justify-content: center;
+  
+}
+
+}
+/* TABLET VIEW */
+@media screen and (min-width:500px) and (max-width:1100px) 
+{
+
+  .container2{
+    /* display: block; */
+    justify-content: center;
+    flex-direction: column;
+   
+    
+  }
+  /* .loremhide{
+    display: none;
+  } */
+
+  .part1{
+    margin-top: -45px;
+    margin-left: 80px;
+  }
+  .part2{
+  
+    margin-left:235px;
+  }
+ 
+.grid1{
+  grid-row: 1/2;
+
+  /* justify-content: center; */
+  height: 300px;
+  width: 630px;
+  /* margin-left: 40px; */
+  /* background-size: cover; */
+  background-position: left;
+}
+.grid2{
+  grid-row: 2/3;
+  grid-column: 1/2;
+  /* justify-content: center; */
+  height: 300px;
+  width: 630px;
+  /* margin-right: 40px; */
+  /* background-size: cover; */
+  background-position: initial;
+}
+.grid3{
+  grid-row: 3/4;
+  /* justify-content: center; */
+  /* margin-left: 40px; */
+  height: 300px;
+  width: 630px;
+  /* background-size:100vw; */
+  background-position:left ;
+}
+.grid4{
+  grid-row:4/5 ;
+  grid-column: 1/2;
+  /* justify-content: center; */
+  height: 300px;
+  width: 630px;
+  /* background-size: cover; */
+  background-position: center;
+}
+
+}
+
